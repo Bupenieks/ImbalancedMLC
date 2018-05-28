@@ -9,6 +9,8 @@ In our experiments we use the 2017 Pascal VOC image database using a custom 90%/
 manually partitioning the provided Pascal VOC train/val dataset. This results in 10337 train and 1153 validation images.
 The label distribution can be seen in Figure 1. This includes counts of multiple occurrences of a single label in one input instance.
 
+<img src="images/dist.png" width="500">
+
 Our baseline model consists of an XceptionNet architecture with a final fully-connected layer with 20 outputs,
 one for each label in the Pascal VOC label set. The network is initalized with ImageNet weights.
 During training we apply several image augmentations to the input images including random flips, rotations,
